@@ -1,0 +1,12 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+char input;
+int main() {
+	cout << "Beep?" << endl;
+	cin >> input;
+	while (input == 'y') {
+	Beep(800, 10);
+	cin >> input;
+	}
+}
