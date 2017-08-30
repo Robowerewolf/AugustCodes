@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int input;
+int main() {
+	cout << "What is your power level?" << endl;
+	cin >> input;
+	if (input < 25)
+		cout << "You could handle Hercule" << endl;
+	else if(input > 25 && input < 50)
+		cout << "You could handle Krillin" << endl;
+	else if(input > 50 && input < 75)
+		cout << "You could handle Yamcha" << endl;
+	else if(input > 75)
+		cout << "You're ready for Goku" << endl;
+}
