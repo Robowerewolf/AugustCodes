@@ -1,0 +1,26 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+void jukebox(int x);
+int input;
+int main() {
+	cout << "What sound do you want to hear? For The joker, press (1). For James Earl Jones, press (2). For Texas Ranger, press (3). For James Earl Jones again, press (4)." << endl;
+	cin >> input;
+	jukebox(input);
+}
+void jukebox(int x) {
+	switch (x) {
+	case 1:
+		PlaySound(TEXT("Joker.wav"), NULL, SND_FILENAME);
+		break;
+	case 2:
+		PlaySound(TEXT("JEJ.wav"), NULL, SND_FILENAME);
+		break;
+	case 3:
+		PlaySound(TEXT("monkey.wav"), NULL, SND_FILENAME);
+		break;
+	case 4:
+		PlaySound(TEXT("Vader.wav"), NULL, SND_FILENAME);
+		break;
+	}
+}
